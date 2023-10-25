@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>MOVIE LIST</title>
+	</head>
+	<body>
+		<h2>Movie List</h2>
+		<table border=1 class="table table-striped">
+			<thead>
+				<tr>
+					<th>Movie Name</th>
+					<th>Movie description</th>
+					<th>Actor Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="movie : ${movies}">
+					<td th:text="${movie.name}"></td>
+					<td th:text="${movie.description}"></td>
+					<td th:text="${movie.actor}"></td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</body>
+</html>
